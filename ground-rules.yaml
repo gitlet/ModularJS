@@ -1,0 +1,16 @@
+Ground rules:
+
+- self-contained module
+  -everything to do w/my module is in my module
+  -no global vars
+  -if a module manages more than one thing, it should be split up
+
+-seperation of concerns
+
+-DRY code: Don't Repeat Yourself
+
+-efficient DOM usage
+  -very few $(selections)
+
+-no mem leaks
+  -all events can be unbound

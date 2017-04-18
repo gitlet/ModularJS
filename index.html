@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en"> 
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modular JS</title>
+    <!-- [ JQUERY CDN ] -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <!-- [ MUSTACHE.JS ] -->
+    <script type="text/javascript" src="assets/js/mustache/mustache.js">
+
+    </script>
+    <!-- [ MAIN.JS ] -->
+    <script type="text/javascript" src="assets/js/main.js"></script>
+    <!-- [ MASTER.CSS ] -->
+    <link rel="stylesheet" href="assets/stylesheets/master.css">
+  </head>
+  <body>
+    <header>
+      <h1>Modular JS <br><span>Implementing the newest methodologies</span></h1>
+    </header>
+    <div id="peopleModule">
+      <h2>People</h2>
+      <input type="text" name="" value="" placeholder="Name">
+      <button type="button" name="button" id="addPerson">Add person</button>
+      <ul id="people">
+        <script type="text/template" id="people-template">
+          {{#people}}
+            <li>
+              <span>{{.}}</span>
+              <i class="del">x</i>
+            </li>
+          {{/people}}
+        </script>
+      </ul>
+    </div>
+  </body>
+</html>
